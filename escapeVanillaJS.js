@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("solveRoom2").addEventListener("click", () => {
-        const jsConcepts = new Set(['closure', 'scope', 'hoisting']);
-        // 🪲 Bug: What's mssing from JS concepts?
+        const jsConcepts = new Set(['closure', 'scope', 'hoisting', 'async']); //Added 'async' for a common concept
+        // 🪲 Bug: What's mssing from JS concepts? FIXED
         const reactConcepts = new Set(['components', 'jsx', 'hooks', 'async']);
         // 🪲 Bug: Incorrect function call FIXED
         const commonConcepts = findIntersection(jsConcepts, reactConcepts);
